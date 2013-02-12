@@ -3,9 +3,10 @@ package Dist::Zilla::Plugin::ReportPhase;
 BEGIN
   {
     $Dist::Zilla::Plugin::ReportPhase::VERSION
-      = substr '$$Version: 0.00 $$', 11, -3;
+      = substr '$$Version: 0.02 $$', 11, -3;
   }
 
+use 5.006;
 use Moose;
 use Moose::Autobox;
 use Data::Dumper;
@@ -38,9 +39,7 @@ with
 
 my $cmd = ref $App::Cmd::active_cmd;
 
-print "Current Command: $cmd\n";
-
-sub _report{ $_[0]->log("########## $_[1] ##########"); }
+sub _report{ $_[0]->logger->log("########## $_[1] ##########"); }
 
 sub after_build      { $_[0]->_report("After Build");       }
 sub after_mint       { $_[0]->_report("After Mint");	    }
@@ -82,7 +81,7 @@ Dist::Zilla::Plugin::ReportPhase - Report whats going on.
 
 =head1 VERSION
 
-version 0.00
+version 0.02
 
 =head1 SYNOPSIS
 

@@ -2,30 +2,27 @@
 use strict;
 use warnings;
 
-BEGIN { require 5.006; }
+use 5.006;
 
-use ExtUtils::MakeMaker 6.31;
+use ExtUtils::MakeMaker 6.30;
 
 
 
 my %WriteMakefileArgs = (
-  'ABSTRACT' => 'Log every role use in every phase executed.',
-  'AUTHOR' => 'Stirling Westrup <swestrup@gmail.com>',
-  'BUILD_REQUIRES' => {
-    'English' => '0',
-    'Test::More' => '0'
+  "ABSTRACT" => "Log every role use in every phase executed.",
+  "AUTHOR" => "Stirling Westrup <swestrup\@gmail.com>",
+  "BUILD_REQUIRES" => {},
+  "CONFIGURE_REQUIRES" => {
+    "ExtUtils::MakeMaker" => "6.30"
   },
-  'CONFIGURE_REQUIRES' => {
-    'ExtUtils::MakeMaker' => '6.31'
-  },
-  'DISTNAME' => 'Dist-Zilla-Plugin-ReportPhase',
-  'EXE_FILES' => [],
-  'LICENSE' => 'gpl',
-  'NAME' => 'Dist::Zilla::Plugin::ReportPhase',
-  'PREREQ_PM' => {},
-  'VERSION' => '0.00',
-  'test' => {
-    'TESTS' => 't/*.t'
+  "DISTNAME" => "Dist-Zilla-Plugin-ReportPhase",
+  "EXE_FILES" => [],
+  "LICENSE" => "gpl",
+  "NAME" => "Dist::Zilla::Plugin::ReportPhase",
+  "PREREQ_PM" => {},
+  "VERSION" => "0.02",
+  "test" => {
+    "TESTS" => "t/*.t"
   }
 );
 
