@@ -5,7 +5,7 @@ MANIFEST
 META.yml
 Makefile.PL
 README
-ReportPhase.pm
+lib/Dist/Zilla/Plugin/ReportPhase.pm
 t/release-dist-manifest.t
 t/release-minimum-version.t
 t/release-pod-syntax.t

@@ -1,6 +1,22 @@
 Revision History for Dist-Zilla-Plugin-ReportPhase
 ==================================================
 
+v0.03 2013-02-13
+----------------
+
+* Date: 2013-02-13 12:43:12 -0500
+  Commit: Stirling Westrup <stirling@userful.ca>
+  Hash: 21aa3efdbe8e03cea12faa68c7b9b991a8ada3ae
+
+    Updated to new dzil standards
+
+* Date: 2013-02-13 11:59:07 -0500
+  Commit: Stirling Westrup <stirling@userful.ca>
+  Hash: e0d6510d229387b5a6377defbc4fff561a30af96
+
+    Moved ReportPhase.pm to lib so I could use MinimumPerl.
+
+
 v0.02 2013-02-12
 ----------------
 

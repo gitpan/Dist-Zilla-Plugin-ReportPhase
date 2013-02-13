@@ -3,7 +3,7 @@ package Dist::Zilla::Plugin::ReportPhase;
 BEGIN
   {
     $Dist::Zilla::Plugin::ReportPhase::VERSION
-      = substr '$$Version: 0.02 $$', 11, -3;
+      = substr '$$Version: 0.03 $$', 11, -3;
   }
 
 use 5.006;
@@ -81,7 +81,7 @@ Dist::Zilla::Plugin::ReportPhase - Report whats going on.
 
 =head1 VERSION
 
-version 0.02
+version 0.03
 
 =head1 SYNOPSIS
 
